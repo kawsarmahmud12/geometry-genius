@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>geometry genius</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- header start -->
+     <header>
+        <div class="navbar bg-base-100 bg-cyan-100 w-11/12 mx-auto">
+            <div class="navbar-start">
+               <h3 class="text-lg"><span class="font-bold">Interactive</span><br>Geometry Genius</h3>
+            </div>
+            <div class="navbar-end">
+              <a href="blog.html" class="btn bg-sky-400 border-none px-8 capitalize text-2xl">Blog</a>
+            </div>
+          </div>
+     </header>
+    <!-- header end -->
+    <!-- main start -->
+    <main>
+       <section class="container ml-[50px] flex flex-col md:flex-row lg:flex-row">
+           <div class="products-cetails mt-4 w-[64%] mb-4 grid md:grid-cols-2 lg:grid-cols-3 ">
+              <div class="card w-64 bg-base-100 border">
+                  <figure class="px-10 pt-10">
+                     <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                     <h2 class="card-title">triangle</h2>
+                     <p>Area(A) = 0.5*b*h</p>
+                     <p>  
+                       <input id="first-input-field" class="px-2 bg-slate-200 w-1/4 ml-3" type="text" placeholder="b">cm
+                       <input id="second-input-field" class="px-2 bg-slate-200 w-1/4 ml-3" type="text" placeholder="h">cm
+                     </p>
+                     <div class="card-actions">
+                        <button id="first-calculate-btn" class="px-12 text-2xl btn btn-primary capitalize">Calculate</button>
+                    </div>
+                </div>
+              </div>
+              <div class="card w-64 bg-base-100 border">
+                  <figure class="px-10 pt-10">
+                     <img src="images/rectangle.png" alt="Shoes" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                     <h2 class="card-title">Rectangle</h2>
+                     <p>Area(A) = w*l</p>
+                     <p>
+                        <input class="px-2 bg-slate-200 w-1/4 ml-3" type="text" placeholder="w">cm
+                       <input class="px-2 bg-slate-200 w-1/4 ml-3" type="text" placeholder="l">cm
+                     </p>
+                     <div class="card-actions">
+                        <button class="px-12 text-2xl btn btn-primary capitalize">Calculate</button>
+                    </div>
+                </div>
+              </div>
+              <div class="card w-64 bg-base-100 border">
+                  <figure class="px-10 pt-10">
+                     <img src="images/parallelogram.png" alt="Shoes" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                     <h2 class="card-title">parallelogram</h2>
+                     <p>Area(A) = b*h</p>
+                     <p>
+                        <input class="px-2 bg-slate-200 w-1/4 ml-3" type="text" placeholder="b">cm
+                        <input class="px-2 bg-slate-200 w-1/4 ml-3" type="text" placeholder="h">cm
+                     </p>
+                     <div class="card-actions">
+                        <button class="px-12 text-2xl btn btn-primary capitalize">Calculate</button>
+                    </div>
+                </div>
+              </div>
+              <div class="card w-64 bg-base-100 border mt-4">
+                  <figure class="px-10 pt-10">
+                     <img src="images/rhombus.png" alt="Shoes" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                     <h2 class="card-title">rhombus</h2>
+                     <p>Area(A) = d1*d2</p>
+                     <p>
+                        <input class="px-2 bg-slate-200 w-1/4 ml-3" type="text" placeholder="d1">cm
+                       <input class="px-2 bg-slate-200 w-1/4 ml-3" type="text" placeholder="d2">cm
+                     </p>
+                     <div class="card-actions">
+                        <button class="px-12 text-2xl btn btn-primary capitalize">Calculate</button>
+                    </div>
+                </div>
+              </div>
+              <div class="card w-64 bg-base-100 border mt-4">
+                  <figure class="px-10 pt-10">
+                     <img src="images/pentagon.png" alt="Shoes" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                     <h2 class="card-title">pentagon</h2>
+                     <p>Area(A) = 0.5*p*b</p>
+                     <p>
+                        <input class="px-2 bg-slate-200 w-1/4 ml-3" type="text" placeholder="p">cm
+                       <input class="px-2 bg-slate-200 w-1/4 ml-3" type="text" placeholder="b">cm
+                     </p>
+                     <div class="card-actions">
+                        <button class="px-12 text-2xl btn btn-primary capitalize">Calculate</button>
+                    </div>
+                </div>
+              </div>
+              <div class="card w-64 bg-base-100 border mt-4">
+                  <figure class="px-10 pt-10">
+                     <img src="images/ellipse.png" alt="Shoes" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                     <h2 class="card-title">ellipse</h2>
+                     <p>Area(A) = 3.14* a *b</p>
+                     <p>
+                        <input class="px-2 bg-slate-200 w-1/4 ml-3" type="text" placeholder="a">cm
+                       <input class="px-2 bg-slate-200 w-1/4 ml-3" type="text" placeholder="b">cm
+                     </p>
+                     <div class="card-actions">
+                        <button class="px-12 text-2xl btn btn-primary capitalize">Calculate</button>
+                    </div>
+                </div>
+              </div>
+           </div>
+           <div class="card-details mx-auto mt-2">
+              <div class="card w-[98%] bg-base-100 border mt-2">
+                  <div class="card-body">
+                      <h2 class="card-title font-bold text-2xl  mx-auto underline">Area Calculation</h2>
+                      <div class="p-0">
+                        <table class="table w-4">
+                          <!-- head -->
+                          <!-- <thead>
+                            <tr>
+                              <th></th>
+                              <th>Name</th>
+                              <th>Job</th>
+                              <th>Favorite Color</th>
+                            </tr>
+                          </thead> -->
+                          <tbody>
+                            <!-- row 1 -->
+                            <tr class="p-0">
+                              <td>1.</td>
+                              <td>triangle</td>
+                              <td>2<span></span>cm<sup>2</sup></td>
+                              <td><button class="bg-blue-400 px-2 py-2 text-white">Convert to m<sup>2</sup></button></td>
+                            </tr>
+                            
+                          </tbody>
+                        </table>
+                      </div>
+                  </div>
+              </div>
+           </div>
+       </section> 
+    </main>
+    <!-- main ends -->
+    <script src="js/geometry.js"></script>
+</body>
+</html>
